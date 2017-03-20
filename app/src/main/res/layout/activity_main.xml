@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.joevess.scrollcardpager.VerticalViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rootVerticalViewPager">
+    </com.joevess.scrollcardpager.VerticalViewPager>
+
+    <com.joevess.scrollcardpager.NotouchLayout
+        android:weightSum="600"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.joevess.scrollcardpager.VerticalViewPager
+            android:id="@+id/vp_one"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="297">
+        </com.joevess.scrollcardpager.VerticalViewPager>
+
+
+        <RelativeLayout
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="200">
+
+            <com.joevess.scrollcardpager.VerticalViewPager
+                android:id="@+id/vp_second"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/textview_2"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40">
+            <com.joevess.scrollcardpager.VerticalViewPager
+                android:id="@+id/vp_third"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/textview_3"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17"/>
+
+        <RelativeLayout
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="46">
+            <com.joevess.scrollcardpager.VerticalViewPager
+                android:id="@+id/vp_fourth"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/textview_4"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+    </com.joevess.scrollcardpager.NotouchLayout>
+</FrameLayout>
+
+
